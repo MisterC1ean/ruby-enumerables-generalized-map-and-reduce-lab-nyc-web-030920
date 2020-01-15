@@ -10,7 +10,7 @@ def map(source_array)
   new
 end
 
-def reduce(array, starting_value = nil)
+def reduce(array, starting_value=nil)
   #reduce returns a value after manipulating data
  if starting_value
    sum = starting_value
