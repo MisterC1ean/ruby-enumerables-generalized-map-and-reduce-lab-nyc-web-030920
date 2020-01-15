@@ -9,3 +9,6 @@ def map(source_array)
   end
   new
 end
+
+def reduce
+end
