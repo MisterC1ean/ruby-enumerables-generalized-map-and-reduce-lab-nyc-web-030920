@@ -12,11 +12,16 @@ end
 
 def reduce(array, starting_value = nil)
   #reduce returns a value after manipulating data
-  total = 0
-  i = 0
-  while i < array.length do
-  total += yield(array[i])
-  i += 1
-end
+ if starting_value
+   num1 = starting_value
+   total = 0
+ else
+   num1 = array[0]
+   i = 1
+   while i < array.length do
+     yield(array[i], starting_value)
+     i += 1
+   end
+ end
 total
 end
