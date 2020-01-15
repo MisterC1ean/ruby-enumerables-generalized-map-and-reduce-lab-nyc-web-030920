@@ -14,7 +14,7 @@ def reduce(array, starting_value = nil)
   #reduce returns a value after manipulating data
  if starting_value
    sum = starting_value
-   total = 0
+   i = 0
  else
    sum = array[0]
    i = 1
