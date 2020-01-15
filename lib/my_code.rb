@@ -7,4 +7,5 @@ def map(source_array)
    new << yield(source_array[i])
     i += 1
   end
+  new
 end
